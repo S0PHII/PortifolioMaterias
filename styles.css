@@ -1,0 +1,13 @@
+:root{
+    --preto: #000000;
+    --principal: #6E2626;
+    --menu:#461616;
+    --corpo: #E6DBC6;
+    --marrom: #6C5046;
+    --branco: #FFFFFF;
+    }
+
+    body{
+    background-color: var(--corpo);
+    
+}
