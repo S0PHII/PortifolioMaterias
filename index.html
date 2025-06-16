@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portifólio </title>
+
+
+
+
+
+
+
+
 <style>
+
+:root{
+    --preto: #000000;
+    --principal: #6E2626;
+    --menu:#461616;
+    --corpo: #E6DBC6;
+    --marrom: #6C5046;
+    --branco: #FFFFFF;
+    }
+
+
 *{
     margin: 0% ; padding: 0%;
 }
     body {
-        background:#E6DBC6;
+        background:var(--corpo);
     }
     header {
-        background-color: #6E2626;
-        color: white;
+        background-color:var(--principal);
+        color: var(--branco);
         height: 15vh;
         align-items: center;
     }
@@ -21,7 +40,7 @@
         size: 20px;
     }
     footer {
-        background-color: #6E2626; height: 12vh; bottom:0%;
+        background-color: var(--principal); height: 12vh; bottom:0%;
 
     }
     header,footer {display:flex; justify-content: left; position: absolute; width: 100%;
@@ -29,15 +48,32 @@
   }
 </style>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
     <header>
-        <img class="livro" alt="">
+        <img class="livro" src="image 10.png">
+        
         <div class="titulo">
             <h1> Biblioteca! </h1>
 </div>
     </header>
-    <footer> <img class="rosa" src="rosa.png" alt="icone de uma rosa"></footer>
+    <footer> 
+        <img class="rosa" src="rosa.png" alt="icone de uma rosa">
+    </footer>
     
 </body>
 </html>
