@@ -44,14 +44,39 @@
         width: 54px;
         padding: 1%; margin: 2%;
     }
-    
+    .drop{
+        display: inline-block;
+    }
+    .drop button{
+        cursor: pointer;
+        border:none;
+    }
+    .drop a{
+        display: block;
+        color: var(--branco);
+        text-decoration: none;
+        padding: 5px, 7.50px;
+    }
+    .drop .conteudo {
+        display: none;
+        background-color: var(--menu);
+        position:absolute;
+        min-width: 100px;
+    }
+    .drop:hover .conteudo {
+        display:block;
+
+    }
+    .drop a:hover{
+        background-color: #2c0a0a;
+    }
     footer {
         background-color: var(--principal); height: 12vh; bottom:0%;
 
     }
     header,footer {display:flex; justify-content: left; position: absolute; width: 100%;
      }
-  }
+  
 </style>
 
 
@@ -76,20 +101,15 @@
         <div class="titulo">
             <h1> Biblioteca! </h1>
 </div>
-<ul>
-    <li> <a href="#">Menu</a></li>
-    <li><a href="#">Languagues</a>
-    <ul class="drop">
-        <li> <a href="#">html</a></li>
-        <li> <a href="#">Style</a></li>
-        <li><a href="#">Java</a></li>
-        <li><a href="#">PHP</a></li>
-    </ul>
-    </li>
-    <li><a href="#">Sobre nós</a></li>
-    <li> <a href="#">Nos contate</a></li>
-</ul>
-<img src="menu.png" alt="">
+<div class="drop">
+    <button> <img src="menu.png" alt=""> </button>
+    <div class="conteudo"> 
+        <a href="https://classroom.google.com/u/1/"> Classroom</a>
+        <a href="mail.google.com/mail/u/0/"> Gmail </a>
+        <a href="https://quizizz.com/join/dashboard"> Quizziz </a>
+    </div>
+</div>
+
     </header>
     
     <footer> 
