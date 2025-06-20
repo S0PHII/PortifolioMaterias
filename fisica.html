@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portifólio </title>
+
+
+
+
+
+
+
+
+<style>
+
+:root{
+    --preto: #000000;
+    --principal: #6E2626;
+    --menu:#461616;
+    --corpo: #E6DBC6;
+    --marrom: #6C5046;
+    --branco: #FFFFFF;
+    }
+
+
+*{
+    margin: 0% ; padding: 0%;
+}
+    body {
+        background:var(--corpo);
+    }
+    header {
+        background-color:var(--principal);
+        color: var(--branco);
+        height: 15vh;
+        align-items: center;
+    }
+    h1{
+        font-size: 450%; padding: -2%;
+    }
+    
+    .livro {
+        width: 54px;
+        padding: 1%; margin: 2%;
+    }
+    
+ .dropbtn {
+    background-color: #461616;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-left: 700px;
+  padding: 10px 10px 0 10px;
+  vertical-align: top;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:#270909 ;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:var(--menu) ;
+  min-width: 160px;
+ margin-LEFT: 629PX;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #330c0c;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+    footer {
+        background-color: var(--principal); height: 12vh; bottom:0%;
+
+    }
+    header,footer {display:flex; justify-content: left; position: absolute; width: 100%;
+     }
+
+     .tudo{
+        background-color: #6C5046;
+        margin-top: 122px; 
+        margin-left: 50px;
+        display: inline-block; 
+        position: absolute; 
+        width: 735px;
+        padding: 30px;
+        position: absolute;
+        
+     }
+     .osdois {
+        width: 21%;
+        float: left;
+     }
+     .letra{ margin-left: 8px; padding: 41px ; display: flex; font-size: 30px; flex-direction: column; color: #FFFFFF;
+
+     }
+     .titulx{
+        margin-bottom: 32px;
+     }
+     .exercicios {
+ margin-top: 122px;       
+ margin-left: 930px; 
+ background-color: var(--marrom); 
+ position: absolute; height: 326px; 
+ padding: 17px;
+     }
+     .letra2 {
+        color: #FFFFFF; text-align: center; align-items: center;
+     }
+     .exer{
+        margin-top: 31px; margin-bottom: -10px; width: 305px;align-items: center;
+     }
+    </style>
+
+    
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <img class="livro" src="image 10.png">
+        
+        <div class="titulo">
+            <h1> Biblioteca! </h1>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"> OUTROS </button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://classroom.google.com/u/1/">Classroom</a>
+    <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
+    <a href="https://quizizz.com/join/dashboard">Quizziz</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+
+</header>
+   <main>
+<div class="tudo">
+<img  class="osdois" src="Group 4.png" alt="">
+
+<div class="letra">
+    <h2 class="titulx">Portifólio de Física</h2>
+<ul>
+<li> Listas de exercicios</li>
+<li> Prova sobre campo elétrico</li>
+<li> Laborátorios</li>
+<li> Relatórios</li>
+
+</ul>
+</div>
+</div>
+
+<div class="exercicios">
+<h2 class="letra2">EXERCÍCIOS DIÁRIOS</h2>
+<img class="exer" src="image 13.png" alt="">
+<a href="https://www.todamateria.com.br/exercicios/exercicios-de-fisica/3-ano-do-ensino-medio/" style=" margin: 9%; font-size: 35px; text-align: center; text-decoration: none; color: #FFFFFF; display: flex; justify-content: center; align-items: center;" >AQUI!</a>
+
+</div>
+
+
+
+   </main>
+    <footer> 
+        <img class="rosa" src="rosa.png" alt="icone de uma rosa"> 
+    </footer>
+    
+</body>
+</html>
