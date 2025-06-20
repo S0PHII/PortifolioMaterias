@@ -45,36 +45,49 @@
         padding: 1%; margin: 2%;
     }
     
-    .menu {
-    font-optical-sizing: auto;
-    font-weight: 336;
-    font-style: normal;
-}
-    nav {
-    height: 100%;
-    width: 0px;
-    background-color: var(--menu);
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    overflow: hidden;
-    transition: widht 0.3s;
+ .dropbtn {
+  background-color: var(--menu);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-nav a {
-    padding: 20px 0;
-    color: #ffffff;
-    font-size: 25px;
-    display: block;
-    padding: 9px 52px 12px 58px;
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:#270909 #;
 }
 
-nav a:hover {
-    color: #bcd2e0;
-    background-color: #2e0c0c;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:var(--menu) ;
+  min-width: 160px;
+  
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
     footer {
         background-color: var(--principal); height: 12vh; bottom:0%;
@@ -108,33 +121,34 @@ nav a:hover {
             <h1> Biblioteca! </h1>
 </div>
 
-<a href="#" class="btn-abrir" onclick="abrirMenu()"> <img src="menu.png" alt="menu"> </a>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://classroom.google.com/u/1/">Classroom</a>
+    <a href="mail.google.com/mail/u/0/">Gmail</a>
+    <a href="https://quizizz.com/join/dashboard">/Quizziz</a>
+  </div>
+</div>
 
-<nav id="menu">
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-<a href="#" onclick="fecharMenu()" > <img src="icon-menu.png" alt="menu"> </a>
-    
-<a class="menu" href="https://classroom.google.com/u/1/">Classroom</a>
-
-<a class="menu" href="mail.google.com/mail/u/0/">Gmail</a>
-
-<a class="menu" href="https://quizizz.com/join/dashboard">Quizziz</a>
-
-</nav>
-        <script>
- 
- function abrirMenu() {
-
-   document.getElementById('menu').style.width= '250px';
- }
-
- function fecharMenu() {
-    document.getElementById('menu').style.width= '0px';
- }
-
-</script>
-
-    
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
 
 
     </header>
