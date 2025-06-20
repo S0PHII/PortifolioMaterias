@@ -97,102 +97,44 @@
     }
     header,footer {display:flex; justify-content: left; position: absolute; width: 100%;
      }
-  
-.QUIMICA{
-    background-color: var(--marrom);
-    border-radius: 10px;
-    padding: 13px;
-    width: 15%;
-    HEIGHT: 59%;
-    min-width: 164px;
-    POSITION: absolute;
-    MARGIN-LEFT: 50px;
-    MARGIN-TOP: 113px;
-}
-.FRASCO {
-    align-items: center;
-    margin-top: 8%;
-    width: 137px;
-    margin-left: 29px;
+
+     .tudo{
+        background-color: #6C5046;
+        margin-top: 122px; 
+        margin-left: 50px;
+        display: inline-block; 
+        position: absolute; 
+        width: 735px;
+        padding: 30px;
+        position: absolute;
+        
+     }
+     .osdois {
+        width: 21%;
+        float: left;
+     }
+     .letra{ margin-left: 8px; padding: 41px ; display: flex; font-size: 30px; flex-direction: column; color: #FFFFFF;
+
+     }
+     .titulx{
+        margin-bottom: 32px;
+     }
+     .exercicios {
+ margin-top: 122px;       
+ margin-left: 930px; 
+ background-color: var(--marrom); 
+ position: absolute; height: 326px; 
+ padding: 17px;
+     }
+     .letra2 {
+        color: #FFFFFF; text-align: center; align-items: center;
+     }
+     .exer{
+        margin-top: 31px; margin-bottom: -10px; width: 305px;align-items: center;
+     }
+    </style>
+
     
-}
-
-.CONTEINER {
-    display:grid;
-    grid-template-columns: repeat(4, 1FR);
-    grid-auto-rows: 59%;
-    column-gap: 271px;
-}
-
-.FISICA{
-    background-color: var(--marrom);
-    border-radius: 10px;
-    padding: 13px;
-    width: 15%;
-    HEIGHT: 59%;
-    min-width: 164px;
-    POSITION: absolute;
-    MARGIN-LEFT: 390px;
-    MARGIN-TOP: 113px;
-}
-.ATOMO {
-    align-items: center;
-    margin-top: 8%;
-    width: 137px;
-    margin-left: 29px;
-    
-}
-
-
-.MATEMATICA{
-    background-color: var(--marrom);
-    border-radius: 10px;
-    padding: 13px;
-    width: 15%;
-    HEIGHT: 59%;
-    min-width: 164px;
-    POSITION: absolute;
-    MARGIN-LEFT: 695px;
-    MARGIN-TOP: 113px;
-}
-.CALC {
-    align-items: center;
-    margin-top: 8%;
-    width: 137px;
-    margin-left: 29px;
-    
-}
-
-.PORTUGUES{
-    background-color: var(--marrom);
-    border-radius: 10px;
-    padding: 13px;
-    width: 15%;
-    HEIGHT: 59%;
-    min-width: 164px;
-    POSITION: absolute;
-    MARGIN-LEFT: 1025px;
-    MARGIN-TOP: 113px;
-}
-.PORT {
-    align-items: center;
-    margin-top: 8%;
-    width: 137px;
-    margin-left: 29px;
-    
-}
-
-
-  
-
-</style>
-
-
-
-
-
-
-
 
 
 
@@ -239,31 +181,33 @@ window.onclick = function(event) {
 }
     </script>
 
+</header>
+   <main>
+<div class="tudo">
+<img  class="osdois" src="Group 5.png" alt="">
 
-    </header>
-    <MAIN>
-        <SEction class="CONTEINER">
-            <DIV class="QUIMICA">
-            <img class="FRASCO" src="image 2.png" alt="">
-            <a href="QUIMICA.HTML" style="margin: 9%; font-size: 35px; text-align: center; text-decoration: none; color: #FFFFFF; display: flex; justify-content: center; align-items: center;">portifólio de química</a> 
-</DIV>
+<div class="letra">
+    <h2 class="titulx">Portifólio de Matemática</h2>
+<ul>
+<li> Listas de exercicios</li>
+<li> Vistos de caderno</li>
+<li> Laborátorios</li>
+<li> Prova de sequência</li>
 
-<DIV class="FISICA">
-            <img class="ATOMO" src="image 3.png" alt="">
-            <a href="fisica.html" style="margin: 9%; font-size: 35px; text-align: center; text-decoration: none; color: #FFFFFF; display: flex; justify-content: center; align-items: center;">portifólio de física</a> 
-</DIV>
+</ul>
+</div>
+</div>
 
-<DIV class="MATEMATICA">
-            <img class="CALC" src="Group 2.png" alt="">
-            <a href="mat.html" style="margin: 9%; font-size: 35px; text-align: center; text-decoration: none; color: #FFFFFF; display: flex; justify-content: center; align-items: center;">portifólio de matemática</a> 
-</DIV>
+<div class="exercicios">
+<h2 class="letra2">EXERCÍCIOS DIÁRIOS</h2>
+<img class="exer" src="image.png" alt="">
+<a href="https://www.todamateria.com.br/exercicios/exercicios-de-fisica/3-ano-do-ensino-medio/" style=" margin: 9%; font-size: 35px; text-align: center; text-decoration: none; color: #FFFFFF; display: flex; justify-content: center; align-items: center;" >AQUI!</a>
 
-<DIV class="PORTUGUES">
-            <img class="PORT" src="Group 3.png" alt="">
-            <a href="#" style="margin: 9%; font-size: 35px; text-align: center; text-decoration: none; color: #FFFFFF; display: flex; justify-content: center; align-items: center;">portifólio de português</a> 
-</DIV>
-        </SEction>
-    </MAIN>
+</div>
+
+
+
+   </main>
     <footer> 
         <img class="rosa" src="rosa.png" alt="icone de uma rosa"> 
     </footer>
